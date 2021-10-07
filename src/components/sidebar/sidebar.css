@@ -29,7 +29,17 @@
 .sidebarListItem {
   display: flex;
   align-items: center;
+  cursor: pointer;
+  padding: 10px 5px;
+  border-radius: 10px;
+  margin-bottom: 3px;
+  transition: all 0.2s ease-in-out;
+}
+.sidebarListItem:last-child {
   margin-bottom: 20px;
+}
+.sidebarListItem:hover {
+  background-color: #468ff0;
 }
 .sidebarIcon {
   margin-right: 15px;
@@ -40,6 +50,7 @@
   padding: 10px;
   border-radius: 5px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .sidebarHr {
@@ -50,4 +61,5 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  cursor: pointer;
 }

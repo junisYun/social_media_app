@@ -4,12 +4,21 @@ import SearchIcon from '@mui/icons-material/Search';
 import PersonIcon from '@mui/icons-material/Person';
 import ChatIcon from '@mui/icons-material/Chat';
 import NotificationsIcon from '@mui/icons-material/Notifications';
+import { useHistory } from 'react-router';
 
 const Topbar = () => {
+  const history = useHistory();
   return (
     <div className="topbarContainer">
       <div className="topbarLeft">
-        <span className="logo">RattaSocial</span>
+        <span
+          className="logo"
+          onClick={() => {
+            history.push('/social_media_app/home');
+          }}
+        >
+          RattaSocial
+        </span>
       </div>
       <div className="topbarCenter">
         <div className="searchBar">
@@ -23,8 +32,15 @@ const Topbar = () => {
 
       <div className="topbarRight">
         <div className="topbarLinks">
-          <span className="topbarLink">Homepage</span>
           <span className="topbarLink">Timeline</span>
+          <span
+            className="topbarLink"
+            onClick={() => {
+              history.push('/social_media_app');
+            }}
+          >
+            Log out
+          </span>
         </div>
         <div className="topbarIcons">
           <div className="topbarIconItem">
@@ -40,7 +56,14 @@ const Topbar = () => {
             <span className="topbarIconBadge">1</span>
           </div>
         </div>
-        <img className="topbarImg" src="/assets/person/1.jpeg" alt="" />
+        <img
+          className="topbarImg"
+          src="assets/person/1.jpeg"
+          alt=""
+          onClick={() => {
+            history.push('/social_media_app/profile');
+          }}
+        />
       </div>
     </div>
   );
