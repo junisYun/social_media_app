@@ -23,11 +23,16 @@
   height: 32px;
   border-radius: 50%;
   object-fit: cover;
+  cursor: pointer;
 }
 .postUserName {
   font-size: 15px;
   font-weight: 500;
   margin: 0 10px;
+  cursor: pointer;
+}
+.postMoreButtonIcon {
+  cursor: pointer;
 }
 .postDate {
   font-size: 12px;

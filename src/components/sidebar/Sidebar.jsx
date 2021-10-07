@@ -11,13 +11,20 @@ import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 import ChatIcon from '@mui/icons-material/Chat';
 import Friends from '../friends/Friends';
 import { Users } from '../../dummyData';
+import { useHistory } from 'react-router';
 
 const Sidebar = () => {
+  const history = useHistory();
   return (
     <div className="sidebar">
       <div className="sidebarWrapper">
         <ul className="sidebarList">
-          <li className="sidebarListItem">
+          <li
+            className="sidebarListItem"
+            onClick={() => {
+              history.push('/social_media_app/home');
+            }}
+          >
             <RssFeedIcon className="sidebarIcon" />
             <span className="sidebarListItemText">Feed</span>
           </li>

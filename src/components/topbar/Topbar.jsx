@@ -58,7 +58,7 @@ const Topbar = () => {
         </div>
         <img
           className="topbarImg"
-          src="assets/person/1.jpeg"
+          src="assets/person/Ratta.PNG"
           alt=""
           onClick={() => {
             history.push('/social_media_app/profile');

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import './login.css';
 
 const Login = () => {
@@ -22,14 +22,9 @@ const Login = () => {
               placeholder="password"
               className="loginInput"
             />
-            <button
-              className="loginButton"
-              onClick={() => {
-                history.push('social_media_app/home');
-              }}
-            >
-              Log In
-            </button>
+            <Link to="/social_media_app/home" className="loginButton">
+              <button className="loginButton">Log In</button>
+            </Link>
             <span className="loginForgot">Forgot Password?</span>
             <button className="loginRegisterButton">
               Create a new account

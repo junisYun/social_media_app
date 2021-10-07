@@ -8,13 +8,13 @@ function App() {
     <>
       <BrowserRouter>
         <Switch>
-          <Route path="/social_media_app/home">
+          <Route exact path="/social_media_app/home">
             <Home />
           </Route>
-          <Route path="/social_media_app/profile">
+          <Route exact path="/social_media_app/profile">
             <Profile />
           </Route>
-          <Route path={['/social_media_app', '/']}>
+          <Route exact path={['/social_media_app', '/']}>
             <Login />
           </Route>
         </Switch>

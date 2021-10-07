@@ -25,7 +25,7 @@ const Post = ({ post }) => {
             <span className="postDate">{post?.date}</span>
           </div>
           <div className="postTopRight">
-            <MoreVertIcon />
+            <MoreVertIcon className="postMoreButtonIcon" />
           </div>
         </div>
         <div className="postCenter">
